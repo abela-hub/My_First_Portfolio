@@ -4,22 +4,53 @@
     <meta charset="UTF-8">
     <title>My Portfolio Website</title>
     <style>
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            display: flex;
-            gap: 20px;
+        /* Existing styles... */
+        
+        /* New table styles */
+        .learners-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 25px 0;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+            overflow: hidden;
         }
-        nav a {
-            text-decoration: none;
-            color: #1DA1F2;
-            font-weight: bold;
+        
+        .learners-table thead tr {
+            background-color: #1DA1F2;
+            color: white;
+            text-align: left;
         }
-        footer {
-            margin-top: 30px;
-            padding: 10px;
-            border-top: 1px solid #eee;
-            text-align: center;
+        
+        .learners-table th,
+        .learners-table td {
+            padding: 12px 15px;
+        }
+        
+        .learners-table tbody tr {
+            border-bottom: 1px solid #dddddd;
+        }
+        
+        .learners-table tbody tr:nth-of-type(even) {
+            background-color: #f3f3f3;
+        }
+        
+        .learners-table tbody tr:last-of-type {
+            border-bottom: 2px solid #1DA1F2;
+        }
+        
+        .learners-table tbody tr:hover {
+            background-color: #e1f5fe;
+        }
+        
+        .table-container {
+            margin: 40px 0;
+        }
+        
+        .table-title {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.5em;
         }
     </style>
 </head>
@@ -35,15 +66,42 @@
 
     <main>
         <article>
-            <h1>Welcome to My Website!</h1>
-            <p>This is my personal portfolio showcasing my journey in web development.</p>
+            <!-- Your existing content here... -->
             
-            <h2>About Me</h2>
-            <p>I'm learning HTML, CSS, and JavaScript to become a full-stack developer.</p>
-            
-            <h2>My Projects</h2>
-            <p>Check out my tweets page for interesting content!</p>
-            <a href="tweets.html">View My Tweets</a>
+            <div class="table-container">
+                <h2 class="table-title">Our Amazing Learners</h2>
+                <table class="learners-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Age</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>25</td>
+                            <td>USA</td>
+                        </tr>
+                        <tr>
+                            <td>Emily</td>
+                            <td>28</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td>Michael</td>
+                            <td>32</td>
+                            <td>Australia</td>
+                        </tr>
+                        <tr>
+                            <td>Sophia</td>
+                            <td>21</td>
+                            <td>UK</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </article>
 
         <aside>
@@ -52,7 +110,7 @@
     </main>
 
     <footer>
-        <p>Made by John Doe - <a href="https://github.com/yourusername" target="_blank">here</a></p>
+        <p>Made by Your Name - <a href="https://your-link.com" target="_blank">here</a></p>
     </footer>
 </body>
 </html>
