@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Alex Johnson - Personal Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        nav {
+            background-color: #34495e;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+        }
+        
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #1abc9c;
+        }
+        
+        section {
+            padding: 2rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        
+        .project {
+            background-color: #f9f9f9;
+            border-left: 4px solid #1abc9c;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .project h3 {
+            color: #2c3e50;
+            margin-top: 0;
+        }
+        
+        .project a {
+            display: inline-block;
+            background-color: #1abc9c;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 0.5rem;
+            transition: background-color 0.3s;
+        }
+        
+        .project a:hover {
+            background-color: #16a085;
+        }
+        
+        #contact a {
+            color: #1abc9c;
+            text-decoration: none;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                gap: 0.5rem;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Alex Johnson</h1>
+        <p>Full Stack Developer | Problem Solver | Tech Enthusiast</p>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="introduction">
+        <h2>Introduction</h2>
+        <p>Hello! I'm Alex, a passionate full-stack developer with 3 years of experience building web applications. I specialize in JavaScript frameworks and love creating efficient, user-friendly solutions to complex problems.</p>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        
+        <article class="project">
+            <h3>E-Commerce Platform</h3>
+            <p>A full-featured online store built with React, Node.js, and MongoDB. Features include product filtering, user authentication, and payment processing.</p>
+            <a href="https://github.com/yourusername/ecommerce-platform" target="_blank">View Project</a>
+        </article>
+        
+        <article class="project">
+            <h3>Task Management App</h3>
+            <p>A productivity application that helps teams organize and track their work. Built with Vue.js and Firebase.</p>
+            <a href="https://github.com/yourusername/task-manager" target="_blank">View Project</a>
+        </article>
+        
+        <article class="project">
+            <h3>Weather Dashboard</h3>
+            <p>Real-time weather application that displays forecasts using data from multiple APIs. Built with pure JavaScript.</p>
+            <a href="https://github.com/yourusername/weather-dashboard" target="_blank">View Project</a>
+        </article>
+    </section>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I hold a Bachelor's degree in Computer Science and have worked with both startups and established companies. When I'm not coding, you can find me hiking, reading sci-fi novels, or experimenting with new recipes in the kitchen.</p>
+        
+        <h3>Skills</h3>
+        <ul>
+            <li>Frontend: HTML5, CSS3, JavaScript, React, Vue.js</li>
+            <li>Backend: Node.js, Express, Python, Django</li>
+            <li>Databases: MongoDB, PostgreSQL</li>
+            <li>Tools: Git, Docker, AWS</li>
+        </ul>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me:</p>
+        <ul>
+            <li>Email: <a href="mailto:alex.johnson@example.com">alex.johnson@example.com</a></li>
+            <li>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></li>
+            <li>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Alex Johnson. All rights reserved.</p>
+    </footer>
+</body>
+</html>
